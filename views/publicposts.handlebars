@@ -1,0 +1,27 @@
+<h1>
+    <a href="/createpost">Create Post</a>
+</h1>
+
+<form action="/logout" method="POST">
+<input type="hidden" value="{{user}}">
+<input type="submit"  value="Logout" class="btn btn-outline btn-danger">
+</form>
+<a href="/myDrafts">See my drafts</a>
+<ul>
+    {{#each posts}}
+        <li>
+            <h2>{{this.title}}</h2>
+            <p>{{this.content}}</p>
+            <p>Status: {{this.status}}</p>
+            <p>Posted by: {{this.user}}</p>
+            <form action="/addComment" method="POST">
+                <input type="hidden" name="postId" value="{{this.id}}">
+                <input type="text" name="comment" placeholder="Write a comment..." required>
+                <button type="submit">Comment</button>
+            </form>
+            <a href="/comments?postId={{this.id}}">See Comments</a>
+        </li>
+            <button>Delete</button>
+    {{/each}}
+</ul>
+

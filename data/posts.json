@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "user": "silvia",
+        "title": "h1",
+        "content": "h1",
+        "status": "published"
+    },
+    {
+        "id": 2,
+        "user": "sc",
+        "title": "hola",
+        "content": "draft",
+        "status": "draft"
+    },
+    {
+        "id": 3,
+        "user": "Camila",
+        "title": "draft",
+        "content": "draft",
+        "status": "draft"
+    },
+    {
+        "id": 4,
+        "user": "q",
+        "title": "prueba",
+        "content": "prueba",
+        "status": "published"
+    }
+]

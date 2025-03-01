@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "postId": 1,
+        "user": "r2",
+        "comment": "hola"
+    },
+    {
+        "id": 2,
+        "postId": 1,
+        "user": "Camila",
+        "comment": "hola"
+    },
+    {
+        "id": 3,
+        "postId": 1,
+        "user": "Camila",
+        "comment": "hola"
+    }
+]
