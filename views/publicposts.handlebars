@@ -21,7 +21,10 @@
             </form>
             <a href="/comments?postId={{this.id}}">See Comments</a>
         </li>
-            <button>Delete</button>
+        <form action="/deletePost" method="POST" >
+            <input type="hidden" name="postId" value="{{this.id}}">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
     {{/each}}
 </ul>
 

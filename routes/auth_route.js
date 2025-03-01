@@ -7,6 +7,7 @@ import {CreatePostController} from "../controllers/CreatePostController.js";
 import {CreateCommentController} from "../controllers/CreateCommentController.js"
 import { DisplayCommentController } from "../controllers/DisplayCommentsController.js";
 import { DisplayDraftController } from "../controllers/DisplayDraftsController.js";
+import {DeletePost} from "../controllers/DeletePost.js"
 
 const auth_route = express.Router({mergeParams: true})
 
@@ -18,5 +19,6 @@ auth_route.get('/publicposts', DisplayPostsController)
 auth_route.post('/addComment', CreateCommentController)
 auth_route.get('/comments', DisplayCommentController)
 auth_route.get('/myDrafts', DisplayDraftController)
+auth_route.post('/deletePost', DeletePost)
 
 export default auth_route
